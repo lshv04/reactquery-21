@@ -1,14 +1,16 @@
 // src/components/Navbar.tsx
 
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import styles from './Navbar.module.css'; // Importando o CSS modular
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
 const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} navbar navbar-expand-lg fixed-top`}>
       <div className="container">
-        <a className="navbar-brand" href="#">Logo</a>
+        <a className="navbar-brand" href="#">
+          Logo
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -24,7 +26,11 @@ const Navbar: React.FC = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink
-                className={({ isActive }) => isActive ? `${styles['nav-link']} ${styles.active}` : styles['nav-link']}
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles["nav-link"]} ${styles.active}`
+                    : styles["nav-link"]
+                }
                 to="/"
               >
                 Home
@@ -32,7 +38,11 @@ const Navbar: React.FC = () => {
             </li>
             <li className="nav-item">
               <NavLink
-                className={({ isActive }) => isActive ? `${styles['nav-link']} ${styles.active}` : styles['nav-link']}
+                className={({ isActive }) =>
+                  isActive
+                    ? `${styles["nav-link"]} ${styles.active}`
+                    : styles["nav-link"]
+                }
                 to="/about"
               >
                 About
