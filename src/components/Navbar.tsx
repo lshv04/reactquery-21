@@ -6,7 +6,7 @@ import styles from './Navbar.module.css'; // Importando o CSS modular
 
 const Navbar: React.FC = () => {
   return (
-    <nav className={`${styles.navbar} navbar navbar-expand-lg navbar-light fixed-top`}>
+    <nav className={`${styles.navbar} navbar navbar-expand-lg fixed-top`}>
       <div className="container">
         <a className="navbar-brand" href="#">Logo</a>
         <button
