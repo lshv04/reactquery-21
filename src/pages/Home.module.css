@@ -1,0 +1,23 @@
+/* src/pages/Home.module.css */
+
+.home {
+ 
+
+    height:100vh;
+  }
+  
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    color: #333;
+ 
+ 
+  }
+  

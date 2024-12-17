@@ -7,6 +7,8 @@ import About from './pages/About'; // Importando a página About
 import Flight from './pages/Flight';
 import './App.css'; // Estilos globais
 import InputBar from './components/InputBar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
   return (
@@ -21,18 +23,11 @@ const App: React.FC = () => {
           <Route path="/flight" element={<Flight />} /> {/* Rota para a página de resultados */}
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 };
 
-// Componente Home
-const Home: React.FC = () => {
-  return (
-    <div>
-      <h1>Home Page</h1>
-      <p>Welcome to the Home page</p>
-    </div>
-  );
-};
+
 
 export default App;
