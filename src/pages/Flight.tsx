@@ -69,12 +69,30 @@ const Flight: React.FC = () => {
       <div>
         {flights && flights.length > 0 ? (
           <ul>
-            {flights.map((flight, index) => (
+            {flights.map((flightData, index) => (
               <li key={index}>
-                <strong>Flight {flight.flight.iata}</strong> - {flight.airline.name}
-                <div>Arrival Airport: {flight.arrival.airport}</div>
-                <div>Departure Airport: {flight.departure.airport}</div>
-                <div>Flight Status: {flight.flight.flight_status}</div>
+                <strong>Flight {flightData.flight.iata} - {flightData.flight.number}</strong> <br />
+                Airline: {flightData.airline.name} <br />
+                Flight Date: {flightData.flight.flight_date} <br />
+                Status: {flightData.flight.flight_status} <br />
+
+                <h4>Arrival</h4>
+                Airport: {flightData.arrival.airport} <br />
+                Delay: {flightData.arrival.delay} <br />
+                Estimated: {flightData.arrival.estimated} <br />
+                Gate: {flightData.arrival.gate} <br />
+                Scheduled: {flightData.arrival.scheduled} <br />
+                Terminal: {flightData.arrival.terminal} <br />
+                Timezone: {flightData.arrival.timezone} <br />
+
+                <h4>Departure</h4>
+                Airport: {flightData.departure.airport} <br />
+                Delay: {flightData.departure.delay} <br />
+                Estimated: {flightData.departure.estimated} <br />
+                Gate: {flightData.departure.gate} <br />
+                Scheduled: {flightData.departure.scheduled} <br />
+                Terminal: {flightData.departure.terminal} <br />
+                Timezone: {flightData.departure.timezone} <br />
               </li>
             ))}
           </ul>
@@ -85,5 +103,4 @@ const Flight: React.FC = () => {
     </div>
   );
 };
-
 export default Flight;
