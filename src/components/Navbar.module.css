@@ -1,0 +1,29 @@
+/* src/components/Navbar.module.css */
+
+.navbar {
+    background-color: transparent !important;
+  }
+  
+  /* Estilos para os links da navbar */
+  .navbar .nav-link {
+    color: #555 !important;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transição para a cor e fundo */
+    padding: 8px 16px; /* Espaciamento para o link */
+    border-radius: 4px; /* Adicionando borda arredondada */
+  }
+  
+  /* Estilos ao passar o mouse (hover) */
+  .navbar .nav-link:hover {
+    color: #007bff !important;
+    background-color: #f0f0f0; /* Cor de fundo no hover */
+    border-radius: 4px; /* Mantém a borda arredondada */
+  }
+  
+  /* Estilos para o link ativo */
+  .navbar .nav-link.active {
+    font-weight: bold;
+    color: #007bff !important;
+    background-color: #e0e0e0; /* Cor de fundo para o link ativo */
+    border-radius: 4px; /* Borda arredondada para o link ativo */
+  }
+  
