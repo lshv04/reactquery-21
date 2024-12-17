@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import styles from './InputBar.module.css'; // Importando o CSS modular
 
 const InputBar: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>(''); // Estado para o valor do input
@@ -19,23 +20,26 @@ const InputBar: React.FC = () => {
       // Caso contrário, navega para a página Flight com o valor do input como parâmetro de pesquisa
       setError(''); // Limpa a mensagem de erro
       navigate(`/flight?search=${searchTerm}`);
+      
+      // Limpa o valor do campo de entrada após o envio
+      setSearchTerm('');
     }
   };
 
   return (
-    <form onSubmit={handleSearch} className="d-flex">
+    <form onSubmit={handleSearch} className={styles.inputBarForm}>
       <input
         type="text"
-        className="form-control me-2"
+        className={styles.inputBarInput}
         placeholder="Search flights"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)} // Atualiza o estado conforme o usuário digita
       />
-      <button type="submit" className="btn btn-primary">
+      <button type="submit" className={styles.inputBarButton}>
         Search
       </button>
 
-      {error && <div className="text-danger mt-2">{error}</div>} {/* Exibe a mensagem de erro */}
+      {error && <div className={styles.inputBarError}>{error}</div>} {/* Exibe a mensagem de erro */}
     </form>
   );
 };
