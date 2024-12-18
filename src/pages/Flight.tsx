@@ -65,37 +65,41 @@ const Flight: React.FC = () => {
         <p className={styles.description}>No search term provided.</p>
       )}
 
-      {/* Exibe os resultados dos voos */}
-      <div>
+      {/* Exibe os resultados dos voos usando Grid do Bootstrap */}
+      <div className="row">
         {flights && flights.length > 0 ? (
-          <ul>
-            {flights.map((flightData, index) => (
-              <li key={index}>
-                <strong>Flight {flightData.flight.iata} - {flightData.flight.number}</strong> <br />
-                Airline: {flightData.airline.name} <br />
-                Flight Date: {flightData.flight.flight_date} <br />
-                Status: {flightData.flight.flight_status} <br />
+          flights.map((flightData, index) => (
+            <div key={index} className="col-md-4 mb-4"> {/* Grid de 3 colunas (para telas médias ou maiores) */}
+              <div className="card">
+                <div className="card-body">
+                  <h5 className="card-title">
+                    <strong>Flight {flightData.flight.iata} - {flightData.flight.number}</strong>
+                  </h5>
+                  <p className="card-text">Airline: {flightData.airline.name}</p>
+                  <p className="card-text">Flight Date: {flightData.flight.flight_date}</p>
+                  <p className="card-text">Status: {flightData.flight.flight_status}</p>
 
-                <h4>Arrival</h4>
-                Airport: {flightData.arrival.airport} <br />
-                Delay: {flightData.arrival.delay} <br />
-                Estimated: {flightData.arrival.estimated} <br />
-                Gate: {flightData.arrival.gate} <br />
-                Scheduled: {flightData.arrival.scheduled} <br />
-                Terminal: {flightData.arrival.terminal} <br />
-                Timezone: {flightData.arrival.timezone} <br />
+                  <h6>Arrival</h6>
+                  <p className="card-text">Airport: {flightData.arrival.airport}</p>
+                  <p className="card-text">Delay: {flightData.arrival.delay}</p>
+                  <p className="card-text">Estimated: {flightData.arrival.estimated}</p>
+                  <p className="card-text">Gate: {flightData.arrival.gate}</p>
+                  <p className="card-text">Scheduled: {flightData.arrival.scheduled}</p>
+                  <p className="card-text">Terminal: {flightData.arrival.terminal}</p>
+                  <p className="card-text">Timezone: {flightData.arrival.timezone}</p>
 
-                <h4>Departure</h4>
-                Airport: {flightData.departure.airport} <br />
-                Delay: {flightData.departure.delay} <br />
-                Estimated: {flightData.departure.estimated} <br />
-                Gate: {flightData.departure.gate} <br />
-                Scheduled: {flightData.departure.scheduled} <br />
-                Terminal: {flightData.departure.terminal} <br />
-                Timezone: {flightData.departure.timezone} <br />
-              </li>
-            ))}
-          </ul>
+                  <h6>Departure</h6>
+                  <p className="card-text">Airport: {flightData.departure.airport}</p>
+                  <p className="card-text">Delay: {flightData.departure.delay}</p>
+                  <p className="card-text">Estimated: {flightData.departure.estimated}</p>
+                  <p className="card-text">Gate: {flightData.departure.gate}</p>
+                  <p className="card-text">Scheduled: {flightData.departure.scheduled}</p>
+                  <p className="card-text">Terminal: {flightData.departure.terminal}</p>
+                  <p className="card-text">Timezone: {flightData.departure.timezone}</p>
+                </div>
+              </div>
+            </div>
+          ))
         ) : (
           <p>No flights found.</p>
         )}
@@ -103,4 +107,5 @@ const Flight: React.FC = () => {
     </div>
   );
 };
+
 export default Flight;
