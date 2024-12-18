@@ -1,23 +1,27 @@
 /* src/pages/Home.module.css */
 
 .home {
- 
+  height: 100vh;
+  background-image: 
+    url('../assets/home/background.png'), /* A imagem vem primeiro */
+    linear-gradient(to bottom, #1e3c72, #2a5298); /* O gradiente vem depois */
+  background-size: cover; /* Faz com que a imagem cubra toda a área da tela */
+  background-position: center center; /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha o conteúdo ao centro da tela */
+  flex-direction: column;
+}
 
-    height:100vh;
-  }
-  
-  
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 1.2rem;
-    color: #333;
- 
- 
-  }
-  
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #333;
+}

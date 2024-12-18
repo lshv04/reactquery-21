@@ -6,7 +6,6 @@ import Navbar from './components/Navbar'; // Importando a Navbar
 import About from './pages/About'; // Importando a página About
 import Flight from './pages/Flight';
 import './App.css'; // Estilos globais
-import InputBar from './components/InputBar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 
@@ -14,15 +13,15 @@ const App: React.FC = () => {
   return (
     <Router>
       <Navbar /> {/* Navbar com links de navegação */}
-      <div className="container mt-5 pt-5">
-      <InputBar/>
+ 
+  
         <Routes>
           {/* A Home será o próprio App.tsx */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/flight" element={<Flight />} /> {/* Rota para a página de resultados */}
         </Routes>
-      </div>
+    
       <Footer/>
     </Router>
   );
