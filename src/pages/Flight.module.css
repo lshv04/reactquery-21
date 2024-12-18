@@ -1,7 +1,9 @@
 /* src/pages/Flight.module.css */
 
 .flight {
-   height: 100vh;
+  display: flex;
+  flex-direction: column; /* Permite que o conteúdo ocupe o restante da altura */
+  min-height: 100vh; /* Garante que o componente ocupe pelo menos 100% da altura da tela */
   }
   
   .title {

@@ -69,7 +69,7 @@ const Flight: React.FC = () => {
       <div className="row">
         {flights && flights.length > 0 ? (
           flights.map((flightData, index) => (
-            <div key={index} className="col-md-4 mb-4"> {/* Grid de 3 colunas (para telas médias ou maiores) */}
+            <div key={index} className="col-12 col-md-4 mb-4"> {/* Grid de 3 colunas (para telas médias ou maiores) */}
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-title">

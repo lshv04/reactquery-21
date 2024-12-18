@@ -1,29 +1,37 @@
-
+/* src/components/Navbar.module.css */
 
 .navbar {
-    background-color: transparent !important;
-  }
-  
+  background-color: black ;
+}
 
-  .navbar .nav-link {
-    color: #555 !important;
-    transition: color 0.3s ease, background-color 0.3s ease; 
-    padding: 8px 16px; 
-    border-radius: 4px; 
-  }
-  
+.navbar .nav-link {
+  color: var(--base-white) ;
+  font-size: 1.25rem;
+  margin: 1.5rem;
+  text-decoration: none; /* Remover o sublinhado original */
+  position: relative; /* Necessário para o pseudo-elemento */
+  transition: color 0.3s ease; /* Transição suave da cor */
+}
 
-  .navbar .nav-link:hover {
-    color: #007bff !important;
-    background-color: #f0f0f0; 
-    border-radius: 4px; 
-  }
-  
+.navbar .nav-link::after {
+  content: ''; /* Adiciona um pseudo-elemento */
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 4px; /* Espessura do sublinhado */
+  background-color: var(--base-white);
+  transform: scaleX(0); /* Inicialmente, o sublinhado está com escala 0 */
+  transform-origin: bottom right; /* Origem da transformação na parte inferior direita */
+  transition: transform 0.3s ease; /* Transição suave para o sublinhado */
+}
 
-  .navbar .nav-link.active {
-    font-weight: bold;
-    color: #007bff !important;
-    background-color: #e0e0e0;
-    border-radius: 4px;
-  }
-  
+.navbar .nav-link.active {
+  font-weight: bold;
+ 
+}
+
+.navbar .nav-link.active::after {
+  transform: scaleX(1); /* Quando o link é ativo, o sublinhado é expandido */
+  transform-origin: bottom left; /* O sublinhado se expande da esquerda para a direita */
+}
