@@ -8,22 +8,22 @@
   color: var(--base-white) ;
   font-size: 1.25rem;
   margin: 1.5rem;
-  text-decoration: none; /* Remover o sublinhado original */
-  position: relative; /* Necessário para o pseudo-elemento */
-  transition: color 0.3s ease; /* Transição suave da cor */
+  text-decoration: none; 
+  position: relative;
+  transition: color 0.3s ease; 
 }
 
 .navbar .nav-link::after {
-  content: ''; /* Adiciona um pseudo-elemento */
+  content: ''; 
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -16px;
   width: 100%;
-  height: 4px; /* Espessura do sublinhado */
+  height: 4px; 
   background-color: var(--base-white);
-  transform: scaleX(0); /* Inicialmente, o sublinhado está com escala 0 */
-  transform-origin: bottom right; /* Origem da transformação na parte inferior direita */
-  transition: transform 0.3s ease; /* Transição suave para o sublinhado */
+  transform: scaleX(0); 
+  transform-origin: bottom right;
+  transition: transform 0.3s ease; 
 }
 
 .navbar .nav-link.active {
@@ -32,6 +32,10 @@
 }
 
 .navbar .nav-link.active::after {
-  transform: scaleX(1); /* Quando o link é ativo, o sublinhado é expandido */
-  transform-origin: bottom left; /* O sublinhado se expande da esquerda para a direita */
+  transform: scaleX(1); 
+  transform-origin: bottom left; 
+}
+.logo {
+  height: 100px ; 
+  
 }

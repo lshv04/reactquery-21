@@ -3,13 +3,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import logo from "../assets/navbar/logo.png"; 
 
 const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} navbar navbar-expand-lg `}>
       <div className="container">
-        <a className="navbar-brand" href="#">
-          Logo
+      <a className="navbar-brand" href="#">
+          <img src={logo} alt="Logo" className={styles.logo} /> 
         </a>
         <button
           className="navbar-toggler"
