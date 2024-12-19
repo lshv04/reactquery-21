@@ -1,8 +1,8 @@
 /* src/components/Footer.module.css */
 
 .footer {
-    background-color: #333;
-    color: white;
+    background-color: var(--base-white);
+    color: var(--base-gray);
     padding: 20px 0;
     text-align: center;
     position: relative;
@@ -26,7 +26,7 @@
   }
   
   .link {
-    color: #fff;
+    color: var(--base-gray);
     text-decoration: none;
     margin: 0 15px;
     font-size: 14px;

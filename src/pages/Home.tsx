@@ -10,14 +10,14 @@ const Home: React.FC = () => {
       <div className="container bord">
         <div className="row">
           <div className="col-12 col-md-4 bord">
-            <InputBar />
+           
             <h1 className={`${styles.title} bord`}>
               Welcome to Our Flight Search
             </h1>
             <p className={`${styles.description} bord`}>
-              Find the best flights at the best prices. Start your search by
-              typing in the search bar above!
+              Find everything there is to know about your flight!
             </p>
+            <InputBar />
           </div>
         </div>
       </div>

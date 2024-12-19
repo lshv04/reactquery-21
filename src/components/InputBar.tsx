@@ -31,7 +31,7 @@ const InputBar: React.FC = () => {
       <input
         type="text"
         className={styles.inputBarInput}
-        placeholder="Search flights"
+        placeholder="Search flight"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)} // Atualiza o estado conforme o usuário digita
       />
