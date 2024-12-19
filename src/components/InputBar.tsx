@@ -36,7 +36,7 @@ const InputBar: React.FC = () => {
         onChange={(e) => setSearchTerm(e.target.value)} // Atualiza o estado conforme o usuário digita
       />
       <button type="submit" className={styles.inputBarButton}>
-        Search
+      <i className="bi bi-search"></i>
       </button>
 
       {error && <div className={styles.inputBarError}>{error}</div>} {/* Exibe a mensagem de erro */}
