@@ -20,18 +20,14 @@
       hsl(225deg 96% 89%) 91%,
       hsl(0deg 0% 100%) 100%);
   background-size: cover;
-  /* Faz com que a imagem cubra toda a área da tela */
   background-position: center right;
-  /* Centraliza a imagem de fundo */
   background-repeat: no-repeat;
-  /* Evita que a imagem se repita */
   background-size: contain;
-  /* A imagem será redimensionada para caber sem distorção */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Alinha o conteúdo ao centro da tela */
   flex-direction: column;
+  padding-top: 6rem;
 }
 
 .title {
@@ -42,7 +38,7 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #fff;
   margin-bottom: 15px;
 }
