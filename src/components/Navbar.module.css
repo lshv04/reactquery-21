@@ -1,7 +1,7 @@
 /* src/components/Navbar.module.css */
 
 .navbar {
-  background-color: black ;
+  background-color: transparent;
 }
 
 .navbar .nav-link {

@@ -1,18 +1,48 @@
 /* src/pages/About.module.css */
 
 .about {
-height: 100vh;
+  height: 100vh;
+  background-image:
+    url('../assets/home/background.png'),
+    /* A imagem vem primeiro */
+    linear-gradient(180deg,
+      hsl(240deg 82% 15%) 0%,
+      hsl(238deg 83% 19%) 5%,
+      hsl(235deg 86% 22%) 10%,
+      hsl(232deg 89% 25%) 15%,
+      hsl(230deg 91% 29%) 22%,
+      hsl(228deg 93% 33%) 29%,
+      hsl(225deg 96% 36%) 37%,
+      hsl(225deg 96% 47%) 46%,
+      hsl(225deg 95% 57%) 56%,
+      hsl(225deg 95% 68%) 68%,
+      hsl(225deg 96% 79%) 79%,
+      hsl(225deg 96% 89%) 91%,
+      hsl(0deg 0% 100%) 100%);
+  background-size: cover;
+  /* Faz com que a imagem cubra toda a área da tela */
+  background-position: center right;
+  /* Centraliza a imagem de fundo */
+  background-repeat: no-repeat;
+  /* Evita que a imagem se repita */
+  background-size: contain;
+  /* A imagem será redimensionada para caber sem distorção */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Alinha o conteúdo ao centro da tela */
+  flex-direction: column;
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #007bff;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .description {
   font-size: 1.2rem;
-  color: #555;
+  color: #fff;
   margin-bottom: 15px;
 }
