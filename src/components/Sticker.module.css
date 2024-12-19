@@ -2,25 +2,21 @@
 
 .sticker {
     display: flex;
-    gap: 15px; /* Espaçamento entre os ícones */
+    gap: 1rem; /* Espaçamento entre os ícones */
     justify-content: center; /* Centraliza os ícones horizontalmente */
     align-items: center; /* Alinha os ícones verticalmente */
-    position: fixed;
-    bottom: 20px; /* Distância da parte inferior da tela */
-    right: 20px; /* Distância da parte direita da tela */
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
     padding: 10px;
-    border-radius: 50%; /* Deixa o fundo arredondado */
-    z-index: 9999; /* Garante que os ícones fiquem acima de outros elementos */
+
+
   }
   
   .icon {
-    color: #fff; /* Cor dos ícones */
-    font-size: 2rem; /* Tamanho do ícone */
+    color: var(--base-gray);
+    font-size: 1.5rem; /* Tamanho do ícone */
     transition: color 0.3s ease; /* Transição suave para a cor */
   }
   
   .icon:hover {
-    color: #007bff; /* Cor ao passar o mouse */
+    color: var(--deep-blue);
   }
   
