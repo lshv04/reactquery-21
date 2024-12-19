@@ -42,3 +42,10 @@
   color: #fff;
   margin-bottom: 15px;
 }
+@media (max-width: 576px) {
+ 
+  .about {
+    padding-top: 16rem;
+    background-position: center 20%;
+  }
+  }

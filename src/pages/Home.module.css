@@ -42,3 +42,11 @@
   font-size: 1.5rem;
   color: var(--base-white);
 }
+
+@media (max-width: 576px) {
+ 
+.home {
+  padding-top: 15rem;
+  background-position: center 20%;
+}
+}
