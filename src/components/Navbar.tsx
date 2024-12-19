@@ -7,7 +7,7 @@ import logo from "../assets/navbar/logo.png";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className={`${styles.navbar} navbar navbar-expand-lg fixed-top `}>
+    <nav className={`${styles.navbar} navbar navbar-expand-sm fixed-top `}>
       <div className="container bord">
       <a className="navbar-brand" href="#">
           <img src={logo} alt="Logo" className={styles.logo} /> 
@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <i className="bi bi-list" style={{ fontSize: "2rem", color: "white" }}></i> 
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
