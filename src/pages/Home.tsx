@@ -6,8 +6,9 @@ import InputBar from '../components/InputBar';
 
 const Home: React.FC = () => {
   return (
-    <div className='container-fluid bord g-0'>
-    <div className={`${styles.home} bord `}>
+    <div className={`${styles.home} bord container-fluid`}>
+      
+    <div className='container bord'>
       <InputBar/>
     <h1 className={`${styles.title} bord`}>Welcome to Our Flight Search</h1>
     <p className={`${styles.description} bord`}>

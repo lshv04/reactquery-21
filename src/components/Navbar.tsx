@@ -8,7 +8,7 @@ import logo from "../assets/navbar/logo.png";
 const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} navbar navbar-expand-lg fixed-top `}>
-      <div className="container">
+      <div className="container bord">
       <a className="navbar-brand" href="#">
           <img src={logo} alt="Logo" className={styles.logo} /> 
         </a>
