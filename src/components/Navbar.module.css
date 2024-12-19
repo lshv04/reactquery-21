@@ -39,3 +39,12 @@
   height: 100px ; 
   
 }
+@media (max-width: 576px) {
+ 
+  .navbar .nav-link::after {
+  
+    height: 4px; 
+    bottom: -4px;
+ 
+  }
+  }
