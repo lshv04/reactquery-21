@@ -1,7 +1,8 @@
 
-(/Blue%20Futuristic%20Technology%20Presentation%20(34).png)
 
-[English Version](#english-version) | [Versão em Português](#versao-em-portugues) | [Images/ Imagens](#Images)
+
+
+[English Version](#english-version) | [Português](#português) | [Images](#images)
 
 # English Version
 
@@ -39,7 +40,7 @@ In this repository, you have access to all the material produced in the project.
 
 ---
 
-# Versão em Português
+# Português
 
 ## Projeto Pessoal React Query - 21
 
@@ -71,13 +72,13 @@ Este é um projeto pessoal com o objetivo de treinar habilidades em React, TypeS
 
 - **React-Bootstrap / TypeScript**: Enfrentei dificuldades ao tipar componentes da biblioteca React-Bootstrap. Como solução temporária, optei por utilizar o Bootstrap puro, o que resultou na perda da animação do menu hambúrguer ao ser ativado. Nos próximos estudos, pretendo explorar alternativas para resolver esse problema e integrar React-Bootstrap de maneira completa e funcional.
 
-
 Neste repositório, você tem acesso a todo o material produzido no projeto.
 
+---
 
-#Images
+# Images
 
-![image](https://github.com/user-attachments/assets/9857bc56-a9d1-47ca-986c-7547377b86c7)  
-![image](https://github.com/user-attachments/assets/7f41f357-3b16-4192-b1bf-77ba141691d5)  
-![image](https://github.com/user-attachments/assets/8f7d9230-8bfa-48bb-b38c-403443962b57)  
-![image](https://github.com/user-attachments/assets/3092f5ff-a23f-4d37-b680-8ecd4a597854)
+![Image 1](https://github.com/user-attachments/assets/9857bc56-a9d1-47ca-986c-7547377b86c7)  
+![Image 2](https://github.com/user-attachments/assets/7f41f357-3b16-4192-b1bf-77ba141691d5)  
+![Image 3](https://github.com/user-attachments/assets/8f7d9230-8bfa-48bb-b38c-403443962b57)  
+![Image 4](https://github.com/user-attachments/assets/3092f5ff-a23f-4d37-b680-8ecd4a597854)
