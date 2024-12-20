@@ -1,8 +1,14 @@
 
+<<<<<<< HEAD
 
-
+![Blue Futuristic Technology Presentation (34)](https://github.com/user-attachments/assets/8d17ff34-68b6-4761-88e5-0ef3964dc8c2)
 
 [English Version](#english-version) | [Português](#português) | [Images](#images)
+=======
+
+
+
+>>>>>>> e15936b2707d64dae1203310949e8ee4a9dd78c0
 
 # English Version
 
