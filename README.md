@@ -1,5 +1,6 @@
 
-(/Blue%20Futuristic%20Technology%20Presentation%20(34).png)
+![Blue Futuristic Technology Presentation (34)](https://github.com/user-attachments/assets/7f39af93-f496-4d94-a4d8-598ed582fda1)
+
 
 [English Version](#english-version) | [Versão em Português](#versao-em-portugues) | [Images/ Imagens](#Images)
 
