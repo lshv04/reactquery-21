@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+* {
   font-family: "Lato", serif;
   font-weight: 400;
- 
+
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  
- 
+
+
 }
+
 :root {
   --base-white: #fff;
-  --base-gray:#333;
-  --deep-blue:#0056b3;
-  --light-blue:#007bff;
- 
+  --base-gray: #333;
+  --deep-blue: #0056b3;
+  --light-blue: #007bff;
+
 }
+
 /* .bord{
   border:1px solid black;
 } */

@@ -81,7 +81,7 @@ const Flight: React.FC = () => {
 
                   <h6>Arrival</h6>
                   <p className="card-text">Airport: {flightData.arrival.airport}</p>
-                  <p className="card-text">Delay: {flightData.arrival.delay}</p>
+                  <p className="card-text text-danger">Delay: {flightData.arrival.delay}</p>
                   <p className="card-text">Estimated: {flightData.arrival.estimated}</p>
                   <p className="card-text">Gate: {flightData.arrival.gate}</p>
                   <p className="card-text">Scheduled: {flightData.arrival.scheduled}</p>
@@ -90,7 +90,7 @@ const Flight: React.FC = () => {
 
                   <h6>Departure</h6>
                   <p className="card-text">Airport: {flightData.departure.airport}</p>
-                  <p className="card-text">Delay: {flightData.departure.delay}</p>
+                  <p className="card-text text-danger">Delay: {flightData.departure.delay}</p>
                   <p className="card-text">Estimated: {flightData.departure.estimated}</p>
                   <p className="card-text">Gate: {flightData.departure.gate}</p>
                   <p className="card-text">Scheduled: {flightData.departure.scheduled}</p>
