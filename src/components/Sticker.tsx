@@ -1,4 +1,4 @@
-// src/components/Sticker.tsx
+
 
 import React from 'react';
 import styles from './Sticker.module.css'; 

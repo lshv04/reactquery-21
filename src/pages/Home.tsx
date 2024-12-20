@@ -1,7 +1,7 @@
-// src/pages/Home.tsx
+
 
 import React from "react";
-import styles from "./Home.module.css"; // Importando a folha de estilo modular
+import styles from "./Home.module.css";
 import InputBar from "../components/InputBar";
 
 const Home: React.FC = () => {

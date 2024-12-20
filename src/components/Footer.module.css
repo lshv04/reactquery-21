@@ -1,39 +1,38 @@
-/* src/components/Footer.module.css */
+
 
 .footer {
-    background-color: var(--base-white);
-    color: var(--base-gray);
-    padding: 20px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .text {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  
-  .links {
-    margin-top: 10px;
-  }
-  
-  .link {
-    color: var(--base-gray);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 14px;
-    transition: color 0.3s ease;
-  }
-  
-  .link:hover {
-    color: var(--deep-blue);
-  }
-  
+  background-color: var(--base-white);
+  color: var(--base-gray);
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.link {
+  color: var(--base-gray);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--deep-blue);
+}

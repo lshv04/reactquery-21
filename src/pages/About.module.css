@@ -1,10 +1,9 @@
-/* src/pages/About.module.css */
+
 
 .about {
   height: 100vh;
   background-image:
     url('../assets/home/background.png'),
-    /* A imagem vem primeiro */
     linear-gradient(180deg,
       hsl(240deg 82% 15%) 0%,
       hsl(238deg 83% 19%) 5%,

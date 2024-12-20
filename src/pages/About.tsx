@@ -14,7 +14,7 @@ const About: React.FC = () => {
               learning and improving skills in Axios API fetching, as well as in
               React Query caching.
             </p>
-            <InputBar/>
+            <InputBar />
           </div>
         </div>
       </div>

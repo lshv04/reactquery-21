@@ -1,9 +1,7 @@
-/* src/pages/Flight.module.css */
 
 .flight {
 
   min-height: 100vh;
-  /* Garante que o componente ocupe pelo menos 100% da altura da tela */
   background-image:
     url('../assets/home/background.png'),
     linear-gradient(180deg,

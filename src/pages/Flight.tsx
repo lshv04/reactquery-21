@@ -1,49 +1,47 @@
-// src/pages/Flight.tsx
 
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import styles from './Flight.module.css'; // Importando o CSS modular
-import { FlightData } from '../types/FlightTypes'; // Importando as tipagens
+import styles from './Flight.module.css'; 
+import { FlightData } from '../types/FlightTypes';
 
-// Função para buscar os dados dos voos com Axios
 const fetchFlights = async (searchTerm: string): Promise<FlightData[]> => {
   try {
     const response = await axios.get<{ data: FlightData[] }>('https://api.aviationstack.com/v1/flights', {
       params: {
-        access_key: 'b4c4f471c4c36a12f4fc470252d2f567', // API Key
-        flight_iata: searchTerm, // Parâmetro de pesquisa
+        access_key: 'b4c4f471c4c36a12f4fc470252d2f567', 
+        flight_iata: searchTerm, 
       },
     });
 
-    console.log('Resposta da API:', response.data); // Verificando a resposta
+    console.log('Resposta da API:', response.data); 
 
     if (!Array.isArray(response.data.data) || response.data.data.length === 0) {
       throw new Error("Dados inválidos ou nenhum voo encontrado");
     }
 
-    return response.data.data; // Retorna os dados dos voos
+    return response.data.data; 
   } catch (error) {
     throw new Error('Erro ao buscar dados: ' + (error instanceof Error ? error.message : 'Erro desconhecido'));
   }
 };
 
 const Flight: React.FC = () => {
-  const { search } = useLocation(); // Obtém a string de consulta da URL
-  const queryParams = new URLSearchParams(search); // Analisa a query string
-  const searchTerm = queryParams.get('search'); // Obtém o valor de "search" da query string
+  const { search } = useLocation();
+  const queryParams = new URLSearchParams(search); 
+  const searchTerm = queryParams.get('search'); 
 
-  // Hook useQuery para gerenciar a requisição com React Query
+
   const {
     data: flights,
     error,
     isLoading,
   } = useQuery<FlightData[], Error>({
-    queryKey: ['flights', searchTerm], // Chave única para a consulta
-    queryFn: () => fetchFlights(searchTerm || ''), // Função de fetch usando Axios
-    staleTime: 1000 * 60 * 60, // Cache válido por 5 minutos
-    enabled: !!searchTerm, // Só executa a consulta se searchTerm estiver presente
+    queryKey: ['flights', searchTerm], 
+    queryFn: () => fetchFlights(searchTerm || ''), 
+    staleTime: 1000 * 60 * 60,
+    enabled: !!searchTerm, 
   });
 
   if (isLoading) {
@@ -66,11 +64,11 @@ const Flight: React.FC = () => {
         <p className={styles.description}>No search term provided.</p>
       )}
 
-      {/* Exibe os resultados dos voos usando Grid do Bootstrap */}
+
       <div className="row">
         {flights && flights.length > 0 ? (
           flights.map((flightData, index) => (
-            <div key={index} className="col-12 col-md-6 col-lg-4 mb-4"> {/* Grid de 3 colunas (para telas médias ou maiores) */}
+            <div key={index} className="col-12 col-md-6 col-lg-4 mb-4"> 
               <div className="card">
                 <div className="card-body">
                   <h5 className="card-header">

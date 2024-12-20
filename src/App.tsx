@@ -1,32 +1,24 @@
-// src/App.tsx
-
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
-import Navbar from './components/Navbar'; // Importando a Navbar
-import About from './pages/About'; // Importando a página About
-import Flight from './pages/Flight';
-import './App.css'; // Estilos globais
-import Footer from './components/Footer';
-import Home from './pages/Home';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Flight from "./pages/Flight";
+import "./App.css";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 
 const App: React.FC = () => {
   return (
     <Router>
-      <Navbar /> {/* Navbar com links de navegação */}
- 
-  
-        <Routes>
-          {/* A Home será o próprio App.tsx */}
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/flight" element={<Flight />} /> {/* Rota para a página de resultados */}
-        </Routes>
-    
-      <Footer/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/flight" element={<Flight />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 };
-
-
 
 export default App;

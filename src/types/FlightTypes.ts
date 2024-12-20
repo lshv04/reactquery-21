@@ -1,4 +1,4 @@
-// src/types/FlightTypes.ts
+
 
 export interface Flight {
     iata: string;

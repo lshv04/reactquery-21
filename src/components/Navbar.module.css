@@ -1,50 +1,50 @@
-/* src/components/Navbar.module.css */
-
 .navbar {
   background-color: transparent;
 }
 
 .navbar .nav-link {
-  color: var(--base-white) ;
+  color: var(--base-white);
   font-size: 1.25rem;
   margin: 1.5rem;
-  text-decoration: none; 
+  text-decoration: none;
   position: relative;
-  transition: color 0.3s ease; 
+  transition: color 0.3s ease;
 }
 
 .navbar .nav-link::after {
-  content: ''; 
+  content: '';
   position: absolute;
   left: 0;
   bottom: -16px;
   width: 100%;
-  height: 4px; 
+  height: 4px;
   background-color: var(--base-white);
-  transform: scaleX(0); 
+  transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .navbar .nav-link.active {
   font-weight: bold;
- 
+
 }
 
 .navbar .nav-link.active::after {
-  transform: scaleX(1); 
-  transform-origin: bottom left; 
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
+
 .logo {
-  height: 100px ; 
-  
+  height: 100px;
+
 }
+
 @media (max-width: 576px) {
- 
+
   .navbar .nav-link::after {
-  
-    height: 4px; 
+
+    height: 4px;
     bottom: -4px;
- 
+
   }
-  }
+}

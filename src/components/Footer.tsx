@@ -1,18 +1,19 @@
-// src/components/Footer.tsx
-
-import React from 'react';
-import styles from './Footer.module.css'; // Importando o CSS modular
-import Sticker from './Sticker';
+import React from "react";
+import styles from "./Footer.module.css";
+import Sticker from "./Sticker";
 
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-          <Sticker/>
-        <p className={styles.text}>© 2024 Leandro Hosken. All rights reserved.</p>
+        <Sticker />
+        <p className={styles.text}>
+          © 2024 Leandro Hosken. All rights reserved.
+        </p>
         <div className={styles.links}>
-          <a href="/about" className={styles.link}>About</a>
-         
+          <a href="/about" className={styles.link}>
+            About
+          </a>
         </div>
       </div>
     </footer>
