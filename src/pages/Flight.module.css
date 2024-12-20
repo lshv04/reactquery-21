@@ -1,49 +1,48 @@
 /* src/pages/Flight.module.css */
 
 .flight {
- 
-  min-height: 100vh; /* Garante que o componente ocupe pelo menos 100% da altura da tela */
-  background-image:
-  url('../assets/home/background.png'),
-  linear-gradient(180deg,
-    hsl(240deg 82% 15%) 0%,
-    hsl(238deg 83% 19%) 5%,
-    hsl(235deg 86% 22%) 10%,
-    hsl(232deg 89% 25%) 15%,
-    hsl(230deg 91% 29%) 22%,
-    hsl(228deg 93% 33%) 29%,
-    hsl(225deg 96% 36%) 37%,
-    hsl(225deg 96% 47%) 46%,
-    hsl(225deg 95% 57%) 56%,
-    hsl(225deg 95% 68%) 68%,
-    hsl(225deg 96% 79%) 79%,
-    hsl(225deg 96% 89%) 91%,
-    hsl(0deg 0% 100%) 100%);
-background-size: cover;
-background-position: center right;
-background-repeat: no-repeat;
-background-size: contain;
-display: flex;
-flex-direction: column;
-padding-top: 6rem;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 1.2rem;
-    color: var(--base-gray);
 
-    margin-bottom: 15px;
-  }
-  
-  .highlight {
-    color: #007bff;
-    font-weight: bold;
-  }
-  
+  min-height: 100vh;
+  /* Garante que o componente ocupe pelo menos 100% da altura da tela */
+  background-image:
+    url('../assets/home/background.png'),
+    linear-gradient(180deg,
+      hsl(240deg 82% 15%) 0%,
+      hsl(238deg 83% 19%) 5%,
+      hsl(235deg 86% 22%) 10%,
+      hsl(232deg 89% 25%) 15%,
+      hsl(230deg 91% 29%) 22%,
+      hsl(228deg 93% 33%) 29%,
+      hsl(225deg 96% 36%) 37%,
+      hsl(225deg 96% 47%) 46%,
+      hsl(225deg 95% 57%) 56%,
+      hsl(225deg 95% 68%) 68%,
+      hsl(225deg 96% 79%) 79%,
+      hsl(225deg 96% 89%) 91%,
+      hsl(0deg 0% 100%) 100%);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  padding-top: 11rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: var(--base-white);
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: bold;
+}

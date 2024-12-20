@@ -42,7 +42,7 @@ const Flight: React.FC = () => {
   } = useQuery<FlightData[], Error>({
     queryKey: ['flights', searchTerm], // Chave única para a consulta
     queryFn: () => fetchFlights(searchTerm || ''), // Função de fetch usando Axios
-    staleTime: 1000 * 60 * 5, // Cache válido por 5 minutos
+    staleTime: 1000 * 60 * 60, // Cache válido por 5 minutos
     enabled: !!searchTerm, // Só executa a consulta se searchTerm estiver presente
   });
 
@@ -55,7 +55,8 @@ const Flight: React.FC = () => {
   }
 
   return (
-    <div className={styles.flight}>
+    <div className={`container-fluid ${styles.flight}`}>
+      <div className="container">
       <h1 className={styles.title}>Flight Search Results</h1>
       {searchTerm ? (
         <p className={styles.description}>
@@ -69,11 +70,11 @@ const Flight: React.FC = () => {
       <div className="row">
         {flights && flights.length > 0 ? (
           flights.map((flightData, index) => (
-            <div key={index} className="col-12 col-md-4 mb-4"> {/* Grid de 3 colunas (para telas médias ou maiores) */}
+            <div key={index} className="col-12 col-md-6 col-lg-4 mb-4"> {/* Grid de 3 colunas (para telas médias ou maiores) */}
               <div className="card">
                 <div className="card-body">
-                  <h5 className="card-title">
-                    <strong>Flight {flightData.flight.iata} - {flightData.flight.number}</strong>
+                  <h5 className="card-header">
+                    <strong className=''>Flight {flightData.flight.iata} - {flightData.flight.number}</strong>
                   </h5>
                   <p className="card-text">Airline: {flightData.airline.name}</p>
                   <p className="card-text">Flight Date: {flightData.flight.flight_date}</p>
@@ -81,7 +82,7 @@ const Flight: React.FC = () => {
 
                   <h6>Arrival</h6>
                   <p className="card-text">Airport: {flightData.arrival.airport}</p>
-                  <p className="card-text text-danger">Delay: {flightData.arrival.delay}</p>
+                  <p className="card-text text-danger">Delay: {flightData.arrival.delay} Min.</p>
                   <p className="card-text">Estimated: {flightData.arrival.estimated}</p>
                   <p className="card-text">Gate: {flightData.arrival.gate}</p>
                   <p className="card-text">Scheduled: {flightData.arrival.scheduled}</p>
@@ -90,7 +91,7 @@ const Flight: React.FC = () => {
 
                   <h6>Departure</h6>
                   <p className="card-text">Airport: {flightData.departure.airport}</p>
-                  <p className="card-text text-danger">Delay: {flightData.departure.delay}</p>
+                  <p className="card-text text-danger">Delay: {flightData.departure.delay} Min.</p>
                   <p className="card-text">Estimated: {flightData.departure.estimated}</p>
                   <p className="card-text">Gate: {flightData.departure.gate}</p>
                   <p className="card-text">Scheduled: {flightData.departure.scheduled}</p>
@@ -104,6 +105,7 @@ const Flight: React.FC = () => {
           <p>No flights found.</p>
         )}
       </div>
+    </div>
     </div>
   );
 };
