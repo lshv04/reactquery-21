@@ -11,7 +11,7 @@ const fetchFlights = async (searchTerm: string): Promise<FlightData[]> => {
   try {
     const response = await axios.get<{ data: FlightData[] }>('https://api.aviationstack.com/v1/flights', {
       params: {
-        access_key: 'b4c4f471c4c36a12f4fc470252d2f567', 
+        access_key:import.meta.env.VITE_ACCESS_KEY, 
         flight_iata: searchTerm, 
       },
     });
