@@ -22,7 +22,8 @@ Este é um projeto pessoal com o objetivo de treinar habilidades em React, TypeS
 - **Bootstrap Components**: Uso de componentes do Bootstrap, como Navbar, Cards e ícones, para acelerar o desenvolvimento.  
 - **Bootstrap Grid**: Aplicação do sistema de grid do Bootstrap para organizar elementos e melhorar a responsividade.  
 - **Bootstrap Classes**: Aproveitamento das classes utilitárias do Bootstrap para implementar estilos de forma prática.  
-- **Bootstrap Icons**: Utilização de ícones do Bootstrap para enriquecer a interface de usuário e melhorar a experiência visual.  
+- **Bootstrap Icons**: Utilização de ícones do Bootstrap para enriquecer a interface de usuário e melhorar a experiência visual.
+- **Bootstrap Spinner**: Spinner criado para quando os dados da Api devem estar carregando.  
 - **Media Queries**: Combinadas com o sistema de grid do Bootstrap para criar layouts responsivos.  
 - **Git/GitHub**: Utilizados para armazenamento, controle de versão do código e publicação da página.  
 
@@ -32,6 +33,8 @@ Este é um projeto pessoal com o objetivo de treinar habilidades em React, TypeS
 ![image](https://github.com/user-attachments/assets/9857bc56-a9d1-47ca-986c-7547377b86c7)  
 ![image](https://github.com/user-attachments/assets/7f41f357-3b16-4192-b1bf-77ba141691d5)  
 ![image](https://github.com/user-attachments/assets/8f7d9230-8bfa-48bb-b38c-403443962b57)  
+![image](https://github.com/user-attachments/assets/3092f5ff-a23f-4d37-b680-8ecd4a597854)  
+
 
 
 
