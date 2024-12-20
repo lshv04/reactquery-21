@@ -5,6 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import styles from './Flight.module.css'; 
 import { FlightData } from '../types/FlightTypes';
+import Spinner from "react-bootstrap/Spinner";
 
 const fetchFlights = async (searchTerm: string): Promise<FlightData[]> => {
   try {
@@ -40,12 +41,17 @@ const Flight: React.FC = () => {
   } = useQuery<FlightData[], Error>({
     queryKey: ['flights', searchTerm], 
     queryFn: () => fetchFlights(searchTerm || ''), 
-    staleTime: 1000 * 60 * 60,
+    staleTime: 1000 * 60 * 5,
     enabled: !!searchTerm, 
   });
 
   if (isLoading) {
-    return <p>Carregando...</p>;
+    return (
+      <div className="d-flex justify-content-center m-5 pt-3">
+        <Spinner animation="border" variant="primary" />
+      </div>
+    );
+
   }
 
   if (error instanceof Error) {
